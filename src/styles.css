@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+}
+
+.clock {
+  background-color: #a39e9e;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.needle {
+  background-color: gray;
+  height: 65px;
+  width: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  z-index: 2;
+  transform-origin: bottom center;
+}
+
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 50px;
+  background-color: slateblue;
+  z-index: 2;
+}
+
+.needle.min {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 60px;
+  width: 2.5px;
+  background-color: yellow;
+  z-index: 2;
+}
+
+.needle.sec {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 80px;
+  width: 2px;
+  background-color: springgreen;
+  z-index: 2;
+}
+
+.center-point {
+  background-color: rgb(7, 7, 243);
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
